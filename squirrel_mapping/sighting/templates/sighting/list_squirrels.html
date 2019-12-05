@@ -1,0 +1,64 @@
+<html>
+<body>
+
+<h2>Display a full list of all squirrels</h2>
+
+<p><a href="add/">Add another squirrel</a></p>
+
+<table style="width:100%">
+  <tr>
+    <th>Unique_Squirrel_ID</th>
+    <th>Latitude</th> 
+    <th>Longitude</th>
+    <th>Shift</th>
+    <th>Date</th>
+    <th>Age</th>
+    <th>Primary_Fur_Color</th>
+    <th>Location</th>
+    <th>Specific_Location</th>
+    <th>Running</th>
+    <th>Chasing</th>
+    <th>Climbing</th>
+    <th>Eating</th>
+    <th>Foraging</th>
+    <th>Kuks</th>
+    <th>Quaas</th>
+    <th>Moans</th>
+    <th>Tail_Flags</th>
+    <th>Tail_Twiches</th>
+    <th>Approaches</th>
+    <th>Indifferent</th>
+    <th>Runs_From</th>
+    <th>Other_Activities</th>
+  </tr>
+  {% for squ in squirrels %}
+  <tr>
+    <td><a href="{{squ.Unique_Squirrel_ID}}">{{squ.Unique_Squirrel_ID}}</a></td>
+    <th>{{squ.Latitude}}</th> 
+    <th>{{squ.Longitude}}</th>
+    <th>{{squ.Shift}}</th>
+    <th>{{squ.Date}}</th>
+    <th>{{squ.Age}}</th>
+    <th>{{squ.Primary_Fur_Color}}</th>
+    <th>{{squ.Location}}</th>
+    <th>{{squ.Specific_Location}}</th>
+    <th>{{squ.Running}}</th>
+    <th>{{squ.Chasing}}</th>
+    <th>{{squ.Climbing}}</th>
+    <th>{{squ.Eating}}</th>
+    <th>{{squ.Foraging}}</th>
+    <th>{{squ.Kuks}}</th>
+    <th>{{squ.Quaas}}</th>
+    <th>{{squ.Moans}}</th>
+    <th>{{squ.Tail_Flags}}</th>
+    <th>{{squ.Tail_Twiches}}</th>
+    <th>{{squ.Approaches}}</th>
+    <th>{{squ.Indifferent}}</th>
+    <th>{{squ.Runs_From}}</th>
+    <th>{{squ.Other_Activities}}</th>
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
