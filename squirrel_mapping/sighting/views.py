@@ -43,12 +43,10 @@ def add_squirrel(request):
 	return render(request, 'sighting/add_squirrel.html', context)
 
 
-class delete_squirrel(DeleteView):
-	model = Squirrel
-	success_url = reverse_lazy('sighting:sighting')
-
 def stats(request):
 	squirrels = Squirrel.objects.all()
+	lattitude = squirrels.aggregate(min_latitude=Min('latitude'),max_latitude=Max('latitude'))
+	longitude = squirrels.aggregate(min_latitude=Min('latitude'),max_latitude=Max('latitude'))
 	context = {'squirrels': squirrels}
 	return render(request, 'sighting/stats.html', context)
 

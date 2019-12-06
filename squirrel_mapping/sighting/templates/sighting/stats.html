@@ -1,28 +1,63 @@
 <html>
-<body>
+    <head>
+        <style>
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #eea29a;
+            color: white;
+            font-size: 30px;
+        }
 
-<h2>Display 5 attributes</h2>
+        h1 { color: #FFFFFF; font-family: 'Helvetica Neue', sans-serif; font-size: 275px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
 
-<table style="width:100%">
-  <tr>
-    <th>Unique_Squirrel_ID</th>
-    <th>Shift</th>
-    <th>Age</th>
-    <th>Primary_Fur_Color</th>
-    <th>Running</th>
-    <th>Chasing</th>
-  </tr>
-  {% for squ in squirrels %}
-  <tr>
-    <td>{{squ.Unique_Squirrel_ID}}</td>
-    <th>{{squ.Shift}}</th>
-    <th>{{squ.Age}}</th>
-    <th>{{squ.Primary_Fur_Color}}</th>
-    <th>{{squ.Running}}</th>
-    <th>{{squ.Chasing}}</th>
-  </tr>
-  {% endfor %}
-</table>
 
-</body>
+        h3 { color: #FFFFFF; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+
+        .button {
+            background-color: #eea29a;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <body>
+        <header class='header'>
+            <h1>Squirrel</h1>
+            <h3>Display statistics for 5 chosen attributes</h3>
+        </header>
+
+
+        <main>
+        	<li>Total number of sightings: {{a}}</li>
+      		<br>
+      		<li>Latitiude：min-{{b.min_latitude}}</li>
+      		<li>Latitiude：max-{{b.max_latitude}}</li>
+      		<li>Latitiude：average-{{b.average_latitude}}</li>
+      		<br>
+      		<li>longitude：min-{{c.min_longitude}}</li>
+      		<li>longitude：max-{{c.max_longitude}}</li>
+      		<li>longitude：average-{{c.average_longitude}}</li>
+      		<br>
+      		<li>shift: {{d}}</li>
+      		<br>
+     		<li>age: {{e}}</li>
+      		<br>
+      		<li>primary_fur_color: {{f}}</li></ul>
+    	</main>
+
+      <footer>
+        <p>You have reached the end of the list</p>
+        <small> Follow our github <a href="https://github.com/kangyan0902/project">click me</a>.</small>
+        </footer>
+
+
+    </body>
 </html>
