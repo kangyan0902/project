@@ -68,6 +68,6 @@ Section: 2
 
 Contributors: Yan Kang, Linbo Li
 
-UNIs: [**[yk2848]**](), [**[ll3339]**]()
+UNIs: [**[yk2848]**](https://github.com/kangyan0902), [**[ll3339]**](https://github.com/Linbo666)
 
 [**Link**](https://github.com/kangyan0902/project) to our Squirrel Tracker application page for more information.
