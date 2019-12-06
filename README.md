@@ -24,3 +24,49 @@ Export: is a command that can be used to export the data in CSV format. The file
 ```sh
 python manage.py export_squirrel_data /path/to/file.csv
 
+## API
+
+### Map View    
+[Map View](https:)   
+
+### Squirrel Lists View   
+[Lists View](https:)
+
+### Squirrel Update View   
+[Update View](https:)  
+
+ 
+### Squirrel Create View   
+[Create View](https://)
+
+### Squirrel Delete View   
+[Delete View](https://)
+
+### Squirrel Stats View   
+[Stats View](https:)
+
+## Dependencies
+- [Django](https://www.djangoproject.com)
+- [Django-Leaflet](https://django-leaflet.readthedocs.io/en/latest/)  
+
+## Documentation
+The official description for this project is in 
+[**Squirrel Tracker**](https://docs.google.com/document/d/1SPv3fMDKiemrR86rD-S9ecvI2npz3PljDzwCfxK2x5g/edit)
+
+## Background
+Eccentric billionaire Joffrey Hosencratz just purchased the web development company you work for. You’ve met him once in an elevator and he was impressed with your skill in developing web applications with the ``Django`` framework. He also relayed that his most recent trip to Sedona, AZ has left him in a bit of trouble. See, he fancies the show Rick and Morty and a particular scene coupled with a traumatic childhood squirrel experience and a bad crystal bath experience in Sedona as left him wanting. 
+
+He would like to start keeping track of all the known squirrels and plans to start with Central Park. He’s asked you to build an application that can import the 2018 Central Park Squirrel Census data and allow his team to add, update, and delete squirrel data. 
+
+
+## Contributors
+
+Group Name: Project Group 3
+
+Section: 2
+
+Contributors: Yan Kang, Linbo Li
+
+UNIs: [**[yk2848]**](), [**[ll3339]**]()
+
+[**Link**](https:) to our Squirrel Tracker application.
