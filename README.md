@@ -4,14 +4,23 @@
 
 ## Introduction
 
-**Squirrel Tracker** This is a web-application constructed based on Django to manage import, manipulate and visualize sightings data of squirrels found in central park of New York.
+We used Django, a web-application tools which can manage import, modify data, to construct a **Squirrel Tracker** with the  visualization of sightings of squirrels found in Manhattan, New York.
 
 
 ## DataSet
-We use squirrel data [**2018 Central Park Squirrel Census**](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) which was counted by the [**Squirrel Census**](https://www.thesquirrelcensus.com/). 
-
-This data set contains data from 3,023 sightings, including location coordinates, age, primary and etc..
+In this project,[**2018 Central Park Squirrel Census**](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) dataset, published by [**Squirrel Census**](https://www.thesquirrelcensus.com/) was used to conduct this project.  
+This data set contains data 3,023 sightings, including location coordinates, age, primary and so on. 
 
 
 ## Management Commands
-Import: A command that can be used to import the data from the 2018 census file (in CSV format). The file path should be specified at the command line after the name of the management command. 
+Import: is a command that can import the data from the csv file, 2018 Central Park Squirrel Census in this project. Specifically, file path should be included at the command line after the management command. 
+
+```sh
+python manage.py import_squirrel_data /path/to/file.csv
+```
+
+Export: is a command that can be used to export the data in CSV format. The file path should be specified at the command line after the name of the management command.
+
+```sh
+python manage.py export_squirrel_data /path/to/file.csv
+
