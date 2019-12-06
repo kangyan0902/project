@@ -4,7 +4,7 @@
 
 ## Introduction
 
-We used Django, a web-application tools which can manage import, modify data, to construct a **Squirrel Tracker** with the  visualization of sightings of squirrels found in Manhattan, New York.
+We used Django, a web-application tools in python which can manage import, modify data, to construct a **Squirrel Tracker** with the  visualization of sightings of squirrels found in Central Park, Manhattan, New York.
 
 
 ## DataSet
@@ -13,13 +13,13 @@ This data set contains data 3,023 sightings, including location coordinates, age
 
 
 ## Management Commands
-Import: is a command that can import the data from the csv file, 2018 Central Park Squirrel Census in this project. Specifically, file path should be included at the command line after the management command. 
+Import: is a command that can import the data from the csv file, 2018 Central Park Squirrel Census. Specifically, the file path should be included after the management command in the command line. 
 
 ```sh
 python manage.py import_squirrel_data /path/to/file.csv
 ```
 
-Export: is a command that can be used to export the data in CSV format. The file path should be specified at the command line after the name of the management command.
+Export: is a command that can be used to export the data in a CSV format. Also, the file path should be added at the command line after the management command.
 
 ```sh
 python manage.py export_squirrel_data /path/to/file.csv
