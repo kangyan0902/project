@@ -70,4 +70,4 @@ Contributors: Yan Kang, Linbo Li
 
 UNIs: [**[yk2848]**](), [**[ll3339]**]()
 
-[**Link**](https:) to our Squirrel Tracker application.
+[**Link**](https://github.com/kangyan0902/project) to our Squirrel Tracker application page for more information.
