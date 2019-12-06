@@ -23,6 +23,7 @@ Export: is a command that can be used to export the data in CSV format. The file
 
 ```sh
 python manage.py export_squirrel_data /path/to/file.csv
+```
 
 ## API
 
