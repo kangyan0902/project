@@ -1,4 +1,4 @@
-# IEOR E4501 Final Project
+# Columbia University IEOR E4501 Final Project
 # Squirrel Tracker: a visulization web-application of tracking squirrels
 
 
